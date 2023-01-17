@@ -1,6 +1,6 @@
 # gnuplot_c
 A C header file (gnuplot.h) to easily plot data using gnuplot. Example code displaying all the functionality can be found in "example.c".  
-Creater By: Ritik Pal, rp.ritikpalavatar@gmail.com  
+Created By: Ritik Pal, rp.ritikpalavatar@gmail.com  
 Created On: 17 Jan 2023.  
 
 # Requirements
