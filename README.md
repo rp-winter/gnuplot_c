@@ -4,7 +4,7 @@ Created By: Ritik Pal, rp.ritikpalavatar@gmail.com
 Created On: 17 Jan 2023.  
 
 # Requirements
-Gnuplot must be installed on your machine, and the application directory must be included in PATH environment variables.  
+Gnuplot must be installed on your machine, and the application directory must be included in PATH environment variables, so that you can call gnuplot through the terminal.
 
 # Getting Started
 To be able to plot graph using the header file, you can:
