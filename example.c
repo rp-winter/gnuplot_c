@@ -9,7 +9,8 @@ int main() {
     strcpy(a->w, "l");
     a->lw = 10;
     a->dt = 3;
-    fplot(a, "data.txt", 1, 3);
+    fplot(a, "data.dat", 1, 3);
+    strcpy(a->t, "y=x^2");
     double arrx[] = {1, 2, 3, 4};
     double arry[] = {1, 4, 9, 16};
     arrPlot2d(a, 4, arrx, arry);

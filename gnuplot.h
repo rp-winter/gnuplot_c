@@ -5,7 +5,7 @@
 
 struct gnuplot
 {
-    char title[20];
+    char t[20];
     char w[3];
     char type[7];
     int keepSet;
@@ -19,7 +19,7 @@ struct gnuplot
 
 
 void init(struct gnuplot *a, char type[]) {
-    a->title[0] = '\0';
+    a->t[0] = '\0';
     strcpy(a->w, "lp");
     strcpy(a->type, "plot");
     a->keepSet = 0;
@@ -34,16 +34,16 @@ void fplot(struct gnuplot *a, char filename[], int x, int y) {
     if(a->plotting != 1) {
         fprintf(a->cmd, "%s ", a->type);
     }
-    char title[30];
-    if(a->title[0] == '\0') {
-        strcpy(title, filename);
+    char t[30];
+    if(a->t[0] == '\0') {
+        strcpy(t, filename);
     }
     else {
-        strcpy(title, a->title);
+        strcpy(t, a->t);
     }
-    fprintf(a->cmd, "\"%s\" using %d:%d t '%s' w %s lw %d dt %d,", filename, x, y, title, a->w, a->lw, a->dt);
+    fprintf(a->cmd, "\"%s\" using %d:%d t '%s' w %s lw %d dt %d,", filename, x, y, t, a->w, a->lw, a->dt);
     if(a->keepSet != 1) {
-        strcpy(a->title, "");
+        strcpy(a->t, "");
         strcpy(a->w, "lp");
         a->lw = 2;
         a->dt = 1;
