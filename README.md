@@ -8,9 +8,9 @@ Gnuplot must be installed on your machine, and the application directory must be
 
 # Getting Started
 To be able to plot graph using the header file, you can:
-1. Either copy the gnuplot.h to the system header files directory.
-2. Or copy the gnuplot.h inside the folder containing the codes you would like to use the header file with.
-After that, in your code you can include the header file using
+1. Either copy the gnuplot.h to the system header files directory.  
+2. Or copy the gnuplot.h inside the folder containing the codes you would like to use the header file with.  
+After that, in your code you can include the header file using  
 ```
 #include <gnuplot.h>
 ```
@@ -21,12 +21,14 @@ or
 This will allow you to use the functions and objects defined in the header file.  
 
 # Plotting Graph
-To plot a graph, you will need to create a pointer to a new gnuplot structure which stores the different options (like linewidth, title etc) for plotting the graph. After creating the structure initialize the options of the new structure using init() function. init() functions needs to arguments (1) pointer to the structure you are initializing. (2) type of plot ("plot" for 2d plot, and "splot" for 3d plot).
+To plot a graph, you will need to create a pointer to a new gnuplot structure which stores the different options (like linewidth, title etc) for plotting the graph.  
+After creating the structure initialize the options of the new structure using init() function. init() functions needs arguments (1) pointer to the structure you are initializing, (2) type of plot ("plot" for 2d plot, and "splot" for 3d plot).  
 ```
 struct gnuplot *a;
 init(a, "plot);
 ```
-After the gnuplot structure has been initialized, you can use several other functions and options to plot graph. After specifying all the plots and its options you can display the graph at the end of your code. To display the graph, display() function is used. The use of display function is explained below.
+After the gnuplot structure has been initialized, you can use several other functions and options to plot graph. After specifying all the plots and its options you can display the graph at the end of your code.  
+To display the graph, display() function is used. The use of display function is explained below.
 
 ## Plotting graph using array
 If you have two arrays x[] and y[] of the same length. You can plot the points using the command arrPlot2d(). This function takes the argument (1) pointer to the gnuplot structure, (2) size of array, (3) array x[] and (4) array y[].
