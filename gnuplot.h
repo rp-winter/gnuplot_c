@@ -24,7 +24,7 @@ void init(struct gnuplot *a, char type[]) {
     strcpy(a->type, "plot");
     a->keepSet = 0;
     a->lw = 2;
-    a->dt = 3;
+    a->dt = 1;
     a->plotting = 0;
     a->no_arrPlot = 0;
     a->cmd = fopen("gnuplot_cmd.gp", "w");
