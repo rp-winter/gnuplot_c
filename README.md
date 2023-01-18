@@ -80,7 +80,8 @@ strcpy(a->w, "lp"); //linepoints
 strcpy(a->w, "p"); //points
 strcpy(a->w, "l"); //line
 ```
-Details of different style fo graph can be obtained in Gnuplot documentation.
+Details of different style of graph can be obtained in Gnuplot documentation.  
+
 3) Line width: 
 Line width of a line graph can be set using,
 ```
@@ -88,7 +89,7 @@ a->lw = 2;
 ```
 
 4) Dash Type: 
-To plot dashed line, or dotter lines.
+To plot dashed line, or dotted lines.
 ```
 a->dt = 3;
 ```
