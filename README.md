@@ -41,7 +41,7 @@ arrPlot2d(a, 4, arrx, arry);
 ## Plotting function of the form y = f(x).
 We can plot function of the form y = f(x) using yplot(). This function takes the arguments (1) pointer to the gnuplot structure, (2) functional form inside quotation mark.
 ```
-yplot(a, sin(x));
+yplot(a, "sin(x)");
 ```
 ## Plotting graph from a data file.
 We can plot data stored in data file using fplot(). This function takes the arguments (1) pointer to the gnuplot structure, (2) data file name, (3) column position of the x data in the data file, and (4) column position of the y data.  
